@@ -22,6 +22,6 @@ Hi! I'm a Computer Engineering Major with Computer Science Minor at SDSU! If you
 * [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
 * Support for Disqus Comments
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+<a markdown="0" href="{{ site.url }}/contact" class="btn">Contact Me!</a>
 
 [^1]: Example: *domain.com/category-name/post-title*
