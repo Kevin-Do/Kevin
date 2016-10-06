@@ -10,7 +10,7 @@ image:
 author: kevin_do
 ---
 
-Hi! I'm a Computer Engineering Major with Computer Science Minor at SDSU! If you're looking for someone who can design elegant solutions and write clean code, I'm your man!
+Hi! I'm a Computer Engineering Major & Computer Science Minor at SDSU! If you're looking for someone who can design elegant solutions and write clean code, I'm your man!
 
 ## Work History
 
