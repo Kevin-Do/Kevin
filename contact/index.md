@@ -7,7 +7,8 @@ search_omit: true
 author: kevin_do
 ---
 
-<center> Hi! I'm always open to discuss new ideas, new technologies or any projects!  
+<center> Hi! I'm always open to discuss new ideas, new technologies and projects!  
+
 I love to collaborate and I'm open to any hiring inquiries.  
 Feel free to shoot me an email, message or call! </center>
 
