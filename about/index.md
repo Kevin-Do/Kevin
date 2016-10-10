@@ -5,7 +5,7 @@ excerpt: "So Simple is a responsive Jekyll theme for your words and images."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
   feature: so-simple-sample-image-4.jpg
-  credit: Institute of Electronics & Electrial Engineers
+  credit: Institute of Electronics & Electrical Engineers
   creditlink: http://ieee.sdsu.edu/
 author: kevin_do
 ---
