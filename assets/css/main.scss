@@ -1,55 +1,39 @@
 ---
-sitemap: false
 ---
 
 /*
+ *    Minimal Mistakes Jekyll Theme
  *
- *  So Simple
- *
- *  Designer: Michael Rose
- *  Twitter: http://twitter.com/mmistakes
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
  *
 */
 
+@import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
-
-/*
-   Vendor
-   ========================================================================== */
-
-@import "vendor/bourbon/bourbon"; /* Bourbon mixins (bourbon.io) */
-@import "grid-settings"; /* Bourbon Neat settings */
-@import "vendor/neat/neat"; /* Bourbon Neat grid mixins (neat.bourbon.io) */
-@import "vendor/font-awesome/font-awesome"; /* Font Awesome icons */
-@import "vendor/magnific-popup/magnific-popup"; /* Magnific Popup lightbox */
-
-/*
-   Global
-   ========================================================================== */
-
 @import "mixins";
+@import "vendor/susy/susy";
+
 @import "reset";
 @import "base";
 
-/*
-   Components
-   ========================================================================== */
-
-@import "helpers";
-@import "buttons";
-@import "wells";
-@import "syntax";
-@import "forms";
-@import "notices"; /* notices and alerts */
+@import "utilities";
 @import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
 @import "masthead";
 @import "navigation";
-@import "search";
 @import "footer";
+@import "syntax";
 
-/*
-   Page specific
-   ========================================================================== */
+@import "forms";
 
-@import "page"; /* layout and styles that apply to posts and pages */
-@import "archives"; /* archive pages (post/tag lists, etc) */
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
