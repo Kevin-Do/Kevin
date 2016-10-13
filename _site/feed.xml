@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-10-12T23:49:08-07:00</updated><id>http://localhost:4000//</id><title type="html">Kevin Do</title><subtitle>Computer Engineer | Aspiring Developer</subtitle><entry><title type="html">Aztec Parking Guidance</title><link href="http://localhost:4000/aztec-parking/" rel="alternate" type="text/html" title="Aztec Parking Guidance" /><published>2016-10-10T00:00:00-07:00</published><updated>2016-10-10T00:00:00-07:00</updated><id>http://localhost:4000/aztec-parking</id><content type="html" xml:base="http://localhost:4000/aztec-parking/">&lt;h1 id=&quot;aztec-parking-guidance-project&quot;&gt;Aztec Parking Guidance Project&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-10-13T11:04:47-07:00</updated><id>http://localhost:4000//</id><title type="html">Kevin Do</title><subtitle>Computer Engineer | Aspiring Developer</subtitle><entry><title type="html">IEEE xTreme Programming Competition</title><link href="http://localhost:4000/ieeeXtreme/" rel="alternate" type="text/html" title="IEEE xTreme Programming Competition" /><published>2016-10-13T00:00:00-07:00</published><updated>2016-10-13T00:00:00-07:00</updated><id>http://localhost:4000/ieeeXtreme</id><content type="html" xml:base="http://localhost:4000/ieeeXtreme/">&lt;h1 id=&quot;aztec-parking-guidance-project&quot;&gt;Aztec Parking Guidance Project&lt;/h1&gt;
+&lt;hr /&gt;</content><category term="Competition" /><category term="Coding" /><category term="24Hours" /><category term="Challenge" /><summary type="html">Aztec Parking Guidance Project</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.sb-ieee.ece.mcgill.ca/images/xtreme.jpg" /></entry><entry><title type="html">Aztec Parking Guidance</title><link href="http://localhost:4000/aztec-parking/" rel="alternate" type="text/html" title="Aztec Parking Guidance" /><published>2016-10-10T00:00:00-07:00</published><updated>2016-10-10T00:00:00-07:00</updated><id>http://localhost:4000/aztec-parking</id><content type="html" xml:base="http://localhost:4000/aztec-parking/">&lt;h1 id=&quot;aztec-parking-guidance-project&quot;&gt;Aztec Parking Guidance Project&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;At SDSU, there is a ton of traffic that stuffs up all of the surrounding streets. During the morning rush and afternoon exodus, traffic is simply jammed and parking spots are also extremely hard to find during the common hours.&lt;/p&gt;
@@ -9,6 +10,77 @@
 &lt;hr /&gt;
 &lt;p&gt;The effective way to calculate open parking spots is to instead account for &lt;strong&gt;% total percent&lt;/strong&gt; capacity of a parking lot. This can simply be done by:&lt;/p&gt;
 
-&lt;p&gt;’’’
-    {total current cars\over total maximum capacity}
-‘’’&lt;/p&gt;</content><category term="Python" /><category term="OpenCV" /><category term="Arduino" /><category term="ImageAnalyzing" /><summary type="html">Aztec Parking Guidance Project</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://farm3.staticflickr.com/2101/2372486734_175bd3c55e_b.jpg" /></entry></feed>
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;totalCurrentCars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;totalMaximumCapacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;currentCapacity&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Instead of posting sensors at every single parking spot or floor, we can instead post single &lt;em&gt;camera + arduino programmed units&lt;/em&gt; at the entrances of the parking lots.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;https://github.com/Kevin-Do/Aztec-Parking-Guidance&quot;&gt;&lt;img src=&quot;http://i.imgur.com/OXw4ISt.jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption&gt; I mapped out all the entrances and parking lots on campus &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;We will be utilizing &lt;a href=&quot;http://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;, an open source computer vision library. Free to use for all purposes, it has great documentation and historical results.&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/z1Cvn3_4yGo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h1 id=&quot;software-pushed-to-githubhttpsgithubcomkevin-doaztec-parking-guidance-btn-btnsuccess&quot;&gt;Software pushed to: &lt;a href=&quot;https://github.com/Kevin-Do/Aztec-Parking-Guidance&quot; class=&quot;btn btn_success&quot;&gt;Github&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;external-factors&quot;&gt;External Factors&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;There will definitely problems that arise when our initial prototypes and implementations.&lt;br /&gt;
+Here are things we need to account for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Faculty Vehicles&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Problem:
+        &lt;ul&gt;
+          &lt;li&gt;Vehicles that belong to administrators, teachers and faculty members cannot be distinguished from student cars. The only varying difference is the &lt;strong&gt;green colored&lt;/strong&gt; permit whereas students have the &lt;strong&gt;red colored&lt;/strong&gt; permit.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Short Term:
+        &lt;ul&gt;
+          &lt;li&gt;Parking capacities will simply have to reflect that open parking spots may or may not belong to faculty only. &lt;em&gt;ie&lt;/em&gt;: &lt;strong&gt;80% capacity&lt;/strong&gt; does not guarantee &lt;strong&gt;20% of purely open student parking spots.&lt;/strong&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Long Term:
+        &lt;ul&gt;
+          &lt;li&gt;Some parking lots have completely sectioned off faculty areas. Out of 8 floors, the bottom 3 floors may be entirely faculty only. This makes accounting for faculty cars completely doable if we plant &lt;strong&gt;additional units&lt;/strong&gt; at those areas!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Night Time&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Problem:
+        &lt;ul&gt;
+          &lt;li&gt;OpenCV image analysis may be faulty or impossible to operate at low light.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Solutions:
+        &lt;ul&gt;
+          &lt;li&gt;Outfit our units with &lt;strong&gt;night vision&lt;/strong&gt;. Our software may need to have configurations to automatically switch over to night vision at certain time periods.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Detection Rate&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Problem:
+        &lt;ul&gt;
+          &lt;li&gt;What happens if a car is miscounted or if slight mistakes occur? This can result in entirely &lt;strong&gt;skewed total capacities&lt;/strong&gt; until the unit is recalibrated. How can we recalibrate mistakes in the detection rate?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Solution:
+        &lt;ul&gt;
+          &lt;li&gt;Make accurate software! Complete trial runs with unit tests and remote control access for fixing calibration. Use Haar Training to steadily improve accuracy as the unit progresses!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><category term="Python" /><category term="OpenCV" /><category term="Arduino" /><category term="ImageAnalyzing" /><summary type="html">Aztec Parking Guidance Project</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://farm3.staticflickr.com/2101/2372486734_175bd3c55e_b.jpg" /></entry></feed>

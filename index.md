@@ -17,13 +17,10 @@ layout: home
 ### I write code in **Python, Java, C++, and Javascript** and I'm a firm believer in deliberate practice and a love for your craft.  
 
 ---
-
 ### Here you'll find my projects, personal posts and development blog!  
 {: style="text-align: center;"}  
 
----
 
-<center> <a markdown="0" href="mailto:kevindokhoale@gmail.com" class="btn">Contact Me!</a> </center>  
-
-<center>
-<a markdown="0" href="https://drive.google.com/file/d/0B4OwYSE7JY88Y21ia1lVNGtMeF9RRWtsOGN4OWhFV2QzOG9v/view?usp=sharing" class="btn">Resume</a> </center>
+[Email Me!](mailto:kevindokhoale@gmail.com){: .btn .btn_success}
+[My Resume](https://drive.google.com/file/d/0B_a8dAD49dXnSHlKYTNGekgyTFk/view?usp=sharing){: .btn .btn_success}
+{: style="text-align: center;"}
