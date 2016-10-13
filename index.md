@@ -21,6 +21,6 @@ layout: home
 {: style="text-align: center;"}  
 
 
-[Email Me!](mailto:kevindokhoale@gmail.com){: .btn .btn_success}
-[My Resume](https://drive.google.com/file/d/0B_a8dAD49dXnSHlKYTNGekgyTFk/view?usp=sharing){: .btn .btn_success}
+## [Email Me!](mailto:kevindokhoale@gmail.com){: .btn .btn_success}
+## [My Resume](https://drive.google.com/file/d/0B_a8dAD49dXnSHlKYTNGekgyTFk/view?usp=sharing){: .btn .btn_success}
 {: style="text-align: center;"}

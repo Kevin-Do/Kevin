@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IEEE xTreme Programming Competition"
+title: "IEEE Student Chapter Guide"
 image: "http://www.sb-ieee.ece.mcgill.ca/images/xtreme.jpg"
 categories:
   - coding

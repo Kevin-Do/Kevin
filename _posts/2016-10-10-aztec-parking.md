@@ -41,10 +41,9 @@ Instead of posting sensors at every single parking spot or floor, we can instead
 We will be utilizing [OpenCV](http://opencv.org/), an open source computer vision library. Free to use for all purposes, it has great documentation and historical results.  
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z1Cvn3_4yGo" frameborder="0" allowfullscreen></iframe>
-</center>
-
+  
 # Software pushed to: [Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
-
+</center>
 ## External Factors
 ---
 There will definitely problems that arise when our initial prototypes and implementations.  

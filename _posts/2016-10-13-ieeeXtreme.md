@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IEEE xTreme Programming Competition"
-image: "http://www.sb-ieee.ece.mcgill.ca/images/xtreme.jpg"
+image: "http://www.student.ugent.be/ieee/sites/default/files/field/image/webimageIEEEExtreme_2014%20kopie.jpg"
 categories:
   - coding
   - competition
