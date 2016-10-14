@@ -26,7 +26,9 @@ Other modern facilities in malls and universities have these systems already in 
 The effective way to calculate open parking spots is to instead account for **% total percent** capacity of a parking lot. This can simply be done by:
 
 ```
-    {totalCurrentCars} \ {totalMaximumCapacity} = currentCapacity %
+    {totalCurrentCars \ totalMaximumCapacity} = currentCapacity (%)
+    or
+{initialLoad + (totalEntries - totalDepartures)} \ {totalLotSize} = loadFactor (.n)
 ```
 
 Instead of posting sensors at every single parking spot or floor, we can instead post single *camera + arduino programmed units* at the entrances of the parking lots.
@@ -40,10 +42,13 @@ Instead of posting sensors at every single parking spot or floor, we can instead
 ---
 We will be utilizing [OpenCV](http://opencv.org/), an open source computer vision library. Free to use for all purposes, it has great documentation and historical results.  
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z1Cvn3_4yGo" frameborder="0" allowfullscreen></iframe>
-
-# Software pushed to: [Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1Cvn3_4yGo" frameborder="0" allowfullscreen></iframe>  
 </center>
+
+# Software pushed to:
+
+[Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
+
 
 ## External Factors
 ---
@@ -57,15 +62,20 @@ Here are things we need to account for:
     * Parking capacities will simply have to reflect that open parking spots may or may not belong to faculty only. *ie*: **80% capacity** does not guarantee **20% of purely open student parking spots.**
   * Long Term:
     * Some parking lots have completely sectioned off faculty areas. Out of 8 floors, the bottom 3 floors may be entirely faculty only. This makes accounting for faculty cars completely doable if we plant **additional units** at those areas!  
+{: .notice_danger}
+* **Faculty Vehicles**:
+    * Problem:
+      * Edge case vehicles like trailer, special equipment vehicles, and temporary service vehicles.
 
 * **Night Time**
   * Problem:
     * OpenCV image analysis may be faulty or impossible to operate at low light.
   * Solutions:
     * Outfit our units with **night vision**. Our software may need to have configurations to automatically switch over to night vision at certain time periods.  
-
+{: .notice_danger}
 * **Detection Rate**
   * Problem:
     * What happens if a car is miscounted or if slight mistakes occur? This can result in entirely **skewed total capacities** until the unit is recalibrated. How can we recalibrate mistakes in the detection rate?
   * Solution:
     * Make accurate software! Complete trial runs with unit tests and remote control access for fixing calibration. Use Haar Training to steadily improve accuracy as the unit progresses!
+{: .notice_danger}
