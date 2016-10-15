@@ -26,9 +26,7 @@ Other modern facilities in malls and universities have these systems already in 
 The effective way to calculate open parking spots is to instead account for **% total percent** capacity of a parking lot. This can simply be done by:
 
 ```
-    {totalCurrentCars \ totalMaximumCapacity} = currentCapacity (%)
-    or
-{initialLoad + (totalEntries - totalDepartures)} \ {totalLotSize} = loadFactor (.n)
+{initialCapacity + (totalEntries - totalDepartures)} \ {totalLotSize} = loadFactor (.n)
 ```
 
 Instead of posting sensors at every single parking spot or floor, we can instead post single *camera + arduino programmed units* at the entrances of the parking lots.
@@ -45,9 +43,20 @@ We will be utilizing [OpenCV](http://opencv.org/), an open source computer visio
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z1Cvn3_4yGo" frameborder="0" allowfullscreen></iframe>  
 </center>
 
-# Software pushed to:
+# Software pushes to:
 
-[Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
+## [Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
+
+## Materials
+---
+| Bill of Materials | Purpose | Cost: |
+|:--------|:-------:|--------:|
+| Raspberry Pi Computer Units  |Runs main program, computations and calcuations  | **TBA**  |
+| Camera/Sensors  | Monitors parking lot entrances and utilizes [OpenCV](http://opencv.org/)    | **TBA**   |
+| Network Adapters  | Transmits data regarding capacity and current conditions    | **TBA**   |
+| External Materials  | (*Waterproof Case, Ethernet, Power Cords*)   | **TBA**   |
+
+
 
 
 ## External Factors
@@ -55,21 +64,16 @@ We will be utilizing [OpenCV](http://opencv.org/), an open source computer visio
 There will definitely problems that arise when our initial prototypes and implementations.  
 Here are things we need to account for:
 
-* **Faculty Vehicles**:
-  * Problem:
-    * Vehicles that belong to administrators, teachers and faculty members cannot be distinguished from student cars. The only varying difference is the **green colored** permit whereas students have the **red colored** permit.
+* **Faculty Vehicles**:  
+Vehicles that belong to administrators, teachers and faculty members cannot be distinguished from student cars. The only varying difference is the **green colored** permit whereas students have the **red colored** permit.
   * Short Term:
     * Parking capacities will simply have to reflect that open parking spots may or may not belong to faculty only. *ie*: **80% capacity** does not guarantee **20% of purely open student parking spots.**
   * Long Term:
     * Some parking lots have completely sectioned off faculty areas. Out of 8 floors, the bottom 3 floors may be entirely faculty only. This makes accounting for faculty cars completely doable if we plant **additional units** at those areas!  
 {: .notice_danger}
-* **Faculty Vehicles**:
-    * Problem:
-      * Edge case vehicles like trailer, special equipment vehicles, and temporary service vehicles.
 
-* **Night Time**
-  * Problem:
-    * OpenCV image analysis may be faulty or impossible to operate at low light.
+* **Night Time**  
+OpenCV image analysis may be faulty or impossible to operate at low light.
   * Solutions:
     * Outfit our units with **night vision**. Our software may need to have configurations to automatically switch over to night vision at certain time periods.  
 {: .notice_danger}
