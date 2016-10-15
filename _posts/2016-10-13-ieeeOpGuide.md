@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IEEE Student Chapter Guide"
+title: "Guide to Operating a SDSU Organization"
 image: "http://www.sb-ieee.ece.mcgill.ca/images/xtreme.jpg"
 categories:
   - coding
@@ -13,5 +13,5 @@ tags:
   - Challenge
 ---
 
-# Aztec Parking Guidance Project
+# So you want to run a club?
 ---

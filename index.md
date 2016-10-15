@@ -17,8 +17,9 @@ layout: home
 ### I write code in **Python, Java, C++, and Javascript** and I'm a firm believer in deliberate practice and a love for your craft.  
 
 ---
+
 ### Here you'll find my projects, personal posts and development blog!  
 
 
 
-[My Resume](https://drive.google.com/file/d/0B_a8dAD49dXnSHlKYTNGekgyTFk/view?usp=sharing){: .btn .btn_success}
+## [My Resume](https://drive.google.com/file/d/0B_a8dAD49dXnSHlKYTNGekgyTFk/view?usp=sharing){: .btn .btn_success}
