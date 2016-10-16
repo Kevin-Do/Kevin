@@ -49,8 +49,8 @@ We will be utilizing [OpenCV](http://opencv.org/), an open source computer visio
 ---
 | Bill of Materials | Purpose | Cost: |
 |---|---|---|
-| Raspberry Pi Computer Units  |Runs main program, computations and calcuations  | **TBA**  |
-| Camera/Sensors  | Monitors parking lot entrances and utilizes [OpenCV](http://opencv.org/)    | **TBA**   |
+| Raspberry Pi Computer Units  | Runs main program, computations and calculations  | **TBA**  |
+| Camera/Sensors  | Monitors parking lot entrances and uses [OpenCV](http://opencv.org/) | **TBA**   |
 | Network Adapters  | Transmits data regarding capacity and current conditions    | **TBA**   |
 | External Materials  | (*Waterproof Case, Ethernet, Power Cords*)   | **TBA**   |
 
@@ -58,27 +58,21 @@ Why RaspberryPi over Arduino?
 
 
 
-## External Factors
----
-There will definitely problems that arise when our initial prototypes and implementations.  
-Here are things we need to account for:
+**Faculty Vehicles**:
+---  
+Vehicles that belong to administrators, teachers and faculty members cannot be distinguished from student cars. The only varying difference is the **green colored** permit whereas students have the **red colored** permit. We might also face problems with specialty edge case vehicles like large service trucks or trailers. *ie: 80% capacity does not guarantee 20% vacant student parking spots.*
+{: .notice_danger}  
 
-**Faculty Vehicles**:  
-Vehicles that belong to administrators, teachers and faculty members cannot be distinguished from student cars. The only varying difference is the **green colored** permit whereas students have the **red colored** permit.
-  * Short Term:
-    * Parking capacities will simply have to reflect that open parking spots may or may not belong to faculty only. *ie*: **80% capacity** does not guarantee **20% vacant student parking spots.**
-  * Long Term:
-    * Some parking lots have completely sectioned off faculty areas. Out of 8 floors, the bottom 3 floors may be entirely faculty only. This makes accounting for faculty cars completely doable if we plant **additional units** at those areas!  
-{: .notice_danger}
+Some parking lots have completely sectioned off faculty areas. Out of 8 floors, the bottom 3 floors may be entirely faculty only. This makes accounting for faculty cars completely doable if we plant **additional units** at those areas!  
+{: .notice_success}
 
-**Night Time**  
+**Night Time**:
+---  
 OpenCV image analysis may be faulty or impossible to operate at low light.
-  * Solutions:
-    * Outfit our units with **night vision**. Our software may need to have configurations to automatically switch over to night vision at certain time periods.  
-{: .notice_danger}
+Outfit our units with **night vision**. Our software may need to have configurations to automatically switch over to night vision at certain time periods.  
+{: .notice_info}
 
-**Detection Rate**  
-What happens if a car is miscounted or if slight mistakes occur? This can result in entirely *skewed total capacities* until the unit is recalibrated. How can we recalibrate mistakes in the detection rate?
-  * Solution:
-    * Other than making accurate software, we'll complete trial runs with unit tests and create remote control access for fixing calibration. Use Haar Training to steadily improve accuracy as the unit progresses.  
-{: .notice_danger}
+**Remote Control Access**:
+---  
+We'll complete trial runs with unit tests and create remote control access for fixing calibration. Use Haar Training to steadily improve accuracy as the unit progresses.  
+{: .notice_info}
