@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Android AI Mapping Application"
-image: "https://farm3.staticflickr.com/2101/2372486734_175bd3c55e_b.jpg"
+title: "Android Application Concepts"
+image: "https://i.ytimg.com/vi/Q1Od7_6FDY0/maxresdefault.jpg"
 categories:
   - projects
   - Learning
@@ -15,8 +15,21 @@ tags:
   - Design
 ---
 
-# Android Coding
+# Android Coding One
 ---
+![process](http://i.imgur.com/y7yyFiM.png)
+
+* Android Studio
+  * SDK - Target and Minimum
+  * Emulators vs. Real Devices
+  * Gradle
+  * Application
+  * Activity
+  * Fragment
+  * Views and ViewGroups
+  * Views and XML layouts
+  * ListView
+  * ArrAdapter
 
 Weight Value
 ---
@@ -75,3 +88,27 @@ Scroll View: Allow scrolling through items
 50 items in list, and only 10 are visable at a time, what is minimum number of views needed to scroll through the list?
 
 5, 10, and 50 are wrong, 12 views will allow for extra elements on either side
+
+The ListView is a specialized control that is optimized for displaying long lists of items. It's very efficient in how it creates, recycles, and displays views, and is optimized to scroll very smoothly. It's also designed to simplify the process of adding, removing, and editing items that are to be displayed in the list -- as you'll learn in more detail later in this lesson.
+(AdaptedView descendant)
+
+match_parent does up the chain of parents for length/width
+
+Adapters
+---
+Takes raw data and builds list item layout and don't create layouts until its needed.
+Bind to ListView and then adapter will check for quantity and items. ListView starts at position zero and asks for the layout at position zero. Adapter creates and returns the item.
+
+| Initialize | Parameters |
+| --- | --- |
+| Array Adapter | context, list item layout ID, text view ID, list of data |
+
+Context - global information about the app environment, access to system services and resources. Use fragments containing activity as the context.
+* call: getActivity()
+* R.layout.list_item_parkinglot (xml file)
+* R.layout.list_item_parkinglot_textview (text view to fill out)
+* parkingLots (array list containing explicit data list)
+
+![View Hierarchy](http://i.imgur.com/1Nb8hYk.png)
+
+[Tips & Tricks](https://drive.google.com/file/d/0B1kaWbepsXZxYV9pUVJOYUcxZGc/view)
