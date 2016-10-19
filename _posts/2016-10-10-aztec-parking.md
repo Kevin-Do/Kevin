@@ -25,9 +25,9 @@ Other modern facilities in malls and universities have these systems already in 
 ---
 The effective way to calculate open parking spots is to instead account for **% total percent** capacity of a parking lot. This can simply be done by:
 
-```
-(initialQuantity + {entries - departures}) \ totalLotCapacity = loadFactor
-```
+<div class="notice">
+(initialCars + {entries - departures}) / totalCapacity = loadFactor
+</div>
 
 Instead of posting sensors at every single parking spot or floor, we can instead post single *camera + arduino programmed units* at the entrances of the parking lots.
 
