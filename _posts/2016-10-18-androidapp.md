@@ -51,8 +51,7 @@ You can define which activity to use as the main activity in the Android manifes
 
 The main activity for your app must be declared in the manifest with an <intent-filter> that includes the MAIN action and LAUNCHER category. For example:
 
-<div class="notice">
-<p>
+{% highlight yaml %}
 <activity android:name=".MainActivity" android:label="@string/app_name">
     <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -60,8 +59,7 @@ The main activity for your app must be declared in the manifest with an <intent-
     </intent-filter>
 </activity>
 Note: When you create a new Android project with the Android SDK tools, the default project files include an Activity class that's declared in the manifest with this filter.
-</p>
-</div>
+{% endhighlight %}
 
 If either the MAIN action or LAUNCHER category are not declared for one of your activities, then your app icon will not appear in the Home screen's list of apps.
 
