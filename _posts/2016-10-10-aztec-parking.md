@@ -84,3 +84,7 @@ Outfit our units with **night vision**. Our software may need to have configurat
 ---  
 We'll complete trial runs with unit tests and create remote control access for fixing calibration. Use Haar Training to steadily improve accuracy as the unit progresses.  
 {: .notice_info}
+
+
+
+<iframe src="https://docs.google.com/document/d/18Eg5EOx2ETNyla-LXG4DLTckIDiXMzJWi56QPfMXA_8/pub?embedded=true"></iframe>
