@@ -119,3 +119,20 @@ public void onCreate(Bundle savedInstanceState) {
        return super.onOptionsItemSelected(item);
    }
 {% endhighlight %}
+
+Permissions
+---
+[Security Section](https://developer.android.com/guide/topics/security/permissions.html)  
+[Permission List](https://developer.android.com/reference/android/Manifest.permission.html)  
+
+Which of the following activities can only be done after declaring a user-permission in the manifest?
+* Taking a photo
+* Making a phone call
+* Accessing contact data
+* Retrieving current location
+
+**The answer is:  Retrieving current location**  
+The other activities rely on other applications *(phone, contacts, camera)* and the user can cancel this action. Current location comes from the UI thread and requires explicit user permission.
+
+What permission must you add to the manifest in order to declare the Internet permission?  
+**The answer is: android.permission.INTERNET**
