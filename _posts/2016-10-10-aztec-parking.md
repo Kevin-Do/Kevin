@@ -21,6 +21,11 @@ At SDSU, there is a ton of traffic that stuffs up all of the surrounding streets
 
 Other modern facilities in malls and universities have these systems already in place with sensors on every parking spot or floor. This is very costly and I believe it can be done way cheaper and much more efficiently.
 
+**Progress BLOG**  
+[Timeline Updates!](https://docs.google.com/document/d/18Eg5EOx2ETNyla-LXG4DLTckIDiXMzJWi56QPfMXA_8/edit?usp=sharing)
+{: .btn .btn_success}
+
+
 ## The Plan
 ---
 The effective way to calculate open parking spots is to instead account for **% total percent** capacity of a parking lot. This can simply be done by:
@@ -44,6 +49,7 @@ We will be utilizing [OpenCV](http://opencv.org/), an open source computer visio
 </center>
 
 ### Software pushes to: [Github](https://github.com/Kevin-Do/Aztec-Parking-Guidance){: .btn .btn_success}
+<a class="github-button" href="https://github.com/kevin-do/Aztec-Parking-Guidance" data-style="mega" aria-label="Star kevin-do/Aztec-Parking-Guidance on GitHub">Star</a>
 
 ## Materials
 
@@ -55,11 +61,10 @@ We will be utilizing [OpenCV](http://opencv.org/), an open source computer visio
 | Network Adapters  | Transmits data regarding capacity and current conditions    | **TBA**   |
 | External Materials  | (*Waterproof Case, Ethernet, Power Cords*)   | **TBA**   |
 
+**Prototype Bill of Materials:** [Spread Sheet](https://docs.google.com/spreadsheets/d/1F0OX3I4pIi6qh72riP2w0rrSMLZh6Gi5A-4ApnPeVbI/edit?usp=sharing)
 
-
-Why RaspberryPi over Arduino?
-
-
+## External Factors
+---
 
 **Faculty Vehicles**:
 ---  
