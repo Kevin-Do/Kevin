@@ -61,7 +61,7 @@ export default Main;
 
 **Example of a Stateless Functional Component**
 
-{% highlight yaml %}  
+{% highlight yaml %}
 
 import {Component} from 'react'
 class TaskRow extends Component{
@@ -77,7 +77,7 @@ var TaskRow = (prop) => {
 };
 export default TaskRow;  
 
-{% endhighlight &}
+{% endhighlight %}
 
 [Javascript and JSX Linting](http://eslint.org/docs/user-guide/integrations)  
 
