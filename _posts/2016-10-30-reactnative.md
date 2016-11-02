@@ -42,7 +42,8 @@ export default Cat
 
 We begin with a reference to base component from 'react'. We extend the base component. Define the render function and bind the value passed though props. The class is then exported. All React components need a render function. Exported components can be reused in other components.
 
-{% highlight yaml %}
+{% highlight yaml %}  
+
 import {Component} from 'react'
 import {Cat} from "./Cat"
 class Main extends Component {
@@ -60,7 +61,8 @@ export default Main;
 
 **Example of a Stateless Functional Component**
 
-{% highlight yaml %}
+{% highlight yaml %}  
+
 import {Component} from 'react'
 class TaskRow extends Component{
   render(){
@@ -73,7 +75,8 @@ export default TaskRow;
 var TaskRow = (prop) => {
     return <p> {props.text}</p>
 };
-export default TaskRow;
+export default TaskRow;  
+
 {% endhighlight &}
 
 [Javascript and JSX Linting](http://eslint.org/docs/user-guide/integrations)  
