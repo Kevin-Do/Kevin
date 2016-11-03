@@ -75,7 +75,7 @@ Layouts
 Linear Layout, Relative Layout, Grid Layout can dynamically adapt to any screen *(absolute is evil)*
 
 |Layout Type | Great for... |
-|---|---|
+|---|:---|
 |Frame | Useful for simple layouts with a single or stack of views that fills entire content area|
 | Linear | Stacking views vertically or horizontally|
 |Relative | Sophisticated layout that allows relative positioning |
@@ -98,7 +98,7 @@ Takes raw data and builds list item layout and don't create layouts until its ne
 Bind to ListView and then adapter will check for quantity and items. ListView starts at position zero and asks for the layout at position zero. Adapter creates and returns the item.
 
 | Initialize | Parameters |
-| --- | --- |
+| --- | :--- |
 | Array Adapter | context, list item layout ID, text view ID, list of data |
 
 Context - global information about the app environment, access to system services and resources. Use fragments containing activity as the context.

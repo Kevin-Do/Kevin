@@ -45,7 +45,7 @@ Can filter out error tags in DM
 **Error Logging**
 
 | Log Levels | Log API |
-| --- | --- |
+| --- |: --- |
 | Error | Log.e(String tag, String msg) |
 | Warn | Log.w (...) |
 | Info | Log.i (...) |

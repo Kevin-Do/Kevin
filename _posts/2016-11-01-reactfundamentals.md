@@ -39,8 +39,8 @@ Each component corresponds to an element in the DOM. Components can be **nested*
 Top level namespace is React. Minimum requirement is a render function.
 
 | Aspects | Description |
-| --- | --- |
-| JSX | Allows us to write HTML like syntax which gets transformed to lightweight JavaScript objects.  | 
+| --- |: --- |
+| JSX | Allows us to write HTML like syntax which gets transformed to lightweight JavaScript objects.  |
 | Virtual DOM | A JavaScript representation of the actual DOM.  |
 | React.createClass | The way in which you create a new component.  |
 | render (method) | What we would like our HTML Template to look like.  
@@ -53,7 +53,7 @@ Top level namespace is React. Minimum requirement is a render function.
 | getDefaultProps | Allows you to set default props for your component. |
 
 | Component LifeCycle  |
-| --- |
+| :--- |
 | componentWillMount — Fired before the component will mount |
 | componentDidMount — Fired after the component mounted  |
 | componentWillReceiveProps — Fired whenever there is a change to props |  
