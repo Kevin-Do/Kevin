@@ -254,7 +254,6 @@ toggleAllButton.addEventListener('click', function(){
 
 ```
 
-HTML:  
 ```html
 <!DOCTYPE html>
 <html>
@@ -278,6 +277,7 @@ HTML:
 
 **Version 7 Implementation**  
 Adding handlers:  
+
 ```html
 
 <!DOCTYPE html>
@@ -297,7 +297,7 @@ Adding handlers:
 </html>
 ```
 ```javascript
-// Code goes here
+
 
 var todoList = {
   todos: [],
