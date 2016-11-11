@@ -11,9 +11,7 @@ tags:
   - Training
 ---
 
-# Practical Javascript 2
----
-## Concepts  
+# Concepts  
 
 * Handlers, inputs and HTML elements.
 * Partitioning code and organized objects for specific purposes.
@@ -21,108 +19,6 @@ tags:
 * Event Delegation  
 * Function passing
 
-
-**Version 8 Implementation**  
-```javascript
-//View object and removed consolelog lines
-var todoList = {
-  todos: [],
-
-  add: function(todoText){
-    this.todos.push({
-      todoText: todoText,
-      completed: false,
-    });
-  },
-  edit: function(position, newValue){
-    this.todos[position].todoText = newValue;
-  },
-  delete: function(position){
-    this.todos.splice(position, 1);
-  },
-  toggleCompleted: function(position){
-    var todo = this.todos[position];
-    todo.completed = !todo.completed;
-  },
-  toggleAll: function(){
-    var totalTodos = this.todos.length;
-    var completedTodos = 0;
-    for(var i = 0; i < totalTodos; i++){
-      if(this.todos[i].completed === true){
-        completedTodos++;
-      }
-    }
-    //all true
-    if(completedTodos === totalTodos){
-      //make false
-      for(var i = 0; i < totalTodos; i++){
-        this.todos[i].completed = false;
-      }
-    }
-    else{
-      for(var i = 0; i < totalTodos; i++){
-        this.todos[i].completed = true;
-        completedTodos++;
-      }
-    }
-  }
-};
-
-var handlers = {
-  addTodo: function(){
-    var addTodoText = document.getElementById('addTodoTextInput');
-    todoList.add(addTodoText.value);
-    addTodoText.value = '';
-    view.displayTodos();
-  },
-  changeTodo: function(){
-    var changeTodoText = document.getElementById('changeTodoText');
-    var changeTodoPosition = document.getElementById('changeTodoPosition');
-    todoList.edit(changeTodoPosition.valueAsNumber, changeTodoText.value);
-    changeTodoText.value = '';
-    changeTodoPosition.value = '';
-    view.displayTodos();
-  },
-  deleteTodo: function(){
-    var deleteTodoPosition = document.getElementById('deleteTodoPosition');
-    todoList.delete(deleteTodoPosition.valueAsNumber);
-    deleteTodoPosition.value = '';
-    view.displayTodos();
-  },
-  toggleCompleted: function(){
-    var togglePosition = document.getElementById('toggleCompletedPosition');
-    todoList.toggleCompleted(toggleCompletedPosition.valueAsNumber);
-    togglePosition.value = '';
-    view.displayTodos();
-  },
-  toggleAll: function(){
-    todoList.toggleAll();
-    view.displayTodos();
-  }
-};
-
-var view = {
-  displayTodos: function(){
-    var todosUl = document.querySelector('ul');
-    todosUl.innerHTML = '';
-    for(var i = 0; i < todoList.todos.length; i++){
-      var todosLi = document.createElement('li');
-
-      //show completed
-      var todoTextWithCompleted = '';
-      if (todoList.todos[i].completed === true){
-        todoTextWithCompleted = '(x) ' + todoList.todos[i].todoText;
-      }
-      else{
-        todoTextWithCompleted = '( ) ' + todoList.todos[i].todoText;
-      }
-      todosLi.textContent =  todoTextWithCompleted;
-      todosUl.appendChild(todosLi);
-    }
-  }
-};
-
-```
 ---
 **Functions within Functions**  
 
@@ -203,20 +99,19 @@ var objectName = {
   methodOne: function(){
     //code
     otherObject.array.forEach(function(){
-      //more code
       //in order to use methodTwo
-      // we must add a this argument to forEach because this has a different context
+      // we must add a this argument to forEach, this has a different context
     }, this // right here);
   },
   methodTwo = function(){
     //code
     //the forEach function cannot access me because it is a callback function
-    //that is within a method and therefore the this is referring to methodOne, not objectName
+    //that is within a method and therefore the this is referring to methodOne
   }  
 };
 ```
 ---
 
 ![Finished](http://i.imgur.com/W43ndvV.png)  
-Final Project Version](https://plnkr.co/edit/XGzJDb?p=info)  
+[Finished Project](https://plnkr.co/edit/XGzJDb?p=info)  
 {: .btn .btn_success}  
