@@ -13,10 +13,16 @@ tags:
 
 # Practical Javascript 2
 ---
-**Version 8 Implementation**  
+## Concepts  
 
-Continued training with handlers, inputs and HTML elements.
-Partitioned code and organized objects for specific purposes. (Data, DOM, View)
+* Handlers, inputs and HTML elements.
+* Partitioning code and organized objects for specific purposes.
+* (Data, DOM, View)
+* Event Delegation  
+* Function passing
+
+
+**Version 8 Implementation**  
 ```javascript
 //View object and removed consolelog lines
 var todoList = {
@@ -168,3 +174,49 @@ DOM.addEventListener('click', function(event){
 1. Functions that accept other functions
 2. Enhances other functions
 3. Call back functions are functions that get passed into higher order functions
+
+---
+
+**Event Delegation**
+
+```javascript
+//Using the event object
+setUpEventListeners: function(){
+
+  //ul delete
+  var todoUl = document.querySelector('ul');
+  todoUl.addEventListener('click', function(event){
+    var elementClicked = event.target;
+    if(elementClicked.className === 'deleteButton'){
+      handlers.deleteTodo(elementClicked.parentNode.id);
+    }
+  });
+
+}
+```
+---
+**Using This**
+
+```javascript
+
+var objectName = {
+  methodOne: function(){
+    //code
+    otherObject.array.forEach(function(){
+      //more code
+      //in order to use methodTwo
+      // we must add a this argument to forEach because this has a different context
+    }, this // right here);
+  },
+  methodTwo = function(){
+    //code
+    //the forEach function cannot access me because it is a callback function
+    //that is within a method and therefore the this is referring to methodOne, not objectName
+  }  
+};
+```
+---
+
+![Finished](http://i.imgur.com/W43ndvV.png)  
+Final Project Version](https://plnkr.co/edit/XGzJDb?p=info)  
+{: .btn .btn_success}  
