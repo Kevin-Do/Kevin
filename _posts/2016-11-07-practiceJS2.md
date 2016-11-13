@@ -113,5 +113,5 @@ var objectName = {
 ---
 
 ![Finished](http://i.imgur.com/W43ndvV.png)  
-[Finished Project](https://plnkr.co/edit/XGzJDb?p=info)  
+[Click Me!](https://plnkr.co/edit/XGzJDb?p=info)  
 {: .btn .btn_success}  
