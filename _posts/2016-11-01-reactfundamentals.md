@@ -70,3 +70,40 @@ Top level namespace is React. Minimum requirement is a render function.
 * Component States
 * Component Props
 * Working with Forms  
+
+Installations:  
+1. Go ahead and install [nodeJS](nodejs.org)  
+2. Go to nodeJS command prompt
+3. npm install -g webpack gulp
+4. cd /directoryOfReactProject/
+5. npm install (uses package.json)
+6. gulp
+7. gulp server (new windows)
+8. localhost:8080
+
+**Project Tools**  
+
+| Name | Purpose |
+| :--- | :--- |
+| Node.Js | Serverside Javascript powered by Google's V8 Javascript Engine |
+| Gulp | Javascript task runner for pre-processing source code and webserver |
+| SASS | Transpile SASS source files to CSS |
+| Babel | Transpile JSX and ECMAScript 2015 source files to ES5.1 Javascript |
+| WebPack | Provides module and packaging system for working with Javascript files |
+| Express | Configuring web server and Node.Js HTTP module to serve web app |
+| Visual Studio Code | Text editor |
+
+npm install creates the node modules folder  
+gulp creates the dist folder for serving to web hosting
+Two React Javascript files are needed for web application usage (one for react, one for web browser DOM)  
+Define component
+Instantiate the component  
+Place into DOM  
+
+**React Component Props**  
+Props are immutable parameters of the component. They are passed in by the parent component and then React then updates by comparing the current DOM with old props and the new DOM with new props.  
+
+This uses a virtual DOM and is called reconciliation.
+We use this to refer to the component and props to the parameters handed in.
+
+**React Component States**  
