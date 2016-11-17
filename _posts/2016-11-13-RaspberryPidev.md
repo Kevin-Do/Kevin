@@ -16,9 +16,6 @@ tags:
 # Aztec Parking Guidance Project Building
 ---
 
-Let's start up with emulation so you can develop without a physical Raspberry Pi unit.  
-
-[Install Me](https://sourceforge.net/projects/rpiqemuwindows/?source=typ_redirect)  
 
 * Programming Goals:
   * Real Time Clock (PST)
@@ -65,4 +62,16 @@ Let's start up with emulation so you can develop without a physical Raspberry Pi
       * Emergencies
   * Water Proof
   * Tamperproof
-  * Encasing (Fiberglass/Glass/Plexiglas)
+  * Encasing (Fiberglass/Glass/Plexiglas)  
+
+
+# Start Here
+
+[Link](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)  
+
+So I began by removing wolfram alpha for more disc space. I then update and upgrade any existing packages.  
+
+1. sudo apt-get purge wolfram-engine
+2. sudo apt-get update
+3. sudo apt-get upgrade
+4. sudo apt-get git

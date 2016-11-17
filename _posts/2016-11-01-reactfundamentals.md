@@ -107,3 +107,7 @@ This uses a virtual DOM and is called reconciliation.
 We use this to refer to the component and props to the parameters handed in.
 
 **React Component States**  
+On the flip side, here are our mutable parameters. the function setState will trigger React to re-render the component with new state values. Ideally very few components should have state. The parent should manage the state and then pass that down to the children with props. This is the common practice to have child receive props triggered by state.  
+
+**React Forms**  
+React forms are different from other UI libraries. The state of the component must be synced with the DOM, this makes typing into inputs challenging. This is because every keystroke does not actually update the value attribute. React hooks onto the onChance function to rerender the DOM on every key press. Form controls which are not managed with onChange are considered uncontrolled forms.  
