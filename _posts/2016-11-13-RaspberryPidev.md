@@ -69,9 +69,12 @@ tags:
 
 [Link](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)  
 
-So I began by removing wolfram alpha for more disc space. I then update and upgrade any existing packages.  
+So I began by removing wolfram alpha for more disc space. I then update and upgrade any existing packages. Also installed vital apps like Iceweasel (a rendition of Firefox) and Git. 
 
 1. sudo apt-get purge wolfram-engine
 2. sudo apt-get update
 3. sudo apt-get upgrade
 4. sudo apt-get git
+5. sudo apt-get iceweasel
+6. // Follow the commands in the link //
+7. // Will take a long time! //
